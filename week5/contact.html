@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reggie's Coffe shop - Home</title>
+    </head>
+
+    <body>
+        <!-- This is an HTML Comment -->
+
+
+        <!-- 
+
+            shift will indent - Shift + Tab will indent backwords.
+            cmd/ctrl + left/right arrows move to start and end of the line.
+            cmd/ctrl + up/down arrows move to start or end of page.
+            shift + cmd/ctrl + left/right/up/down arrows select to the start/end of a line.
+            shift + up/down arrow select per line
+
+         -->
+
+
+        <!-- Site Header -->
+        <header>
+            <!-- h1 is the most important heading. We can use 6 levels of headings from h1 to h6 -->
+            <h1>Reggie's Coffe Shop</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- Starting the main cintent of the page -->
+        <main>
+            <h2>Contact Us</h2>
+            <!-- Adding table for hour of operation -->
+            <table border>
+                <caption>Hours of Operation</caption>
+                <thead>
+                    <tr>             
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                   <tr>
+                        <td>Mon - Fri</td>
+                        <td>6AM - 9PM</td>
+
+                   </tr>
+
+                   <tr>
+                        <td>Sat</td>
+                        <td>8AM - 11PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sun</td>
+                        <td>CLOSED</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Adding section for Contact  -->
+            <section>
+
+                <h3>We would love to here from you</h3>
+
+                <!-- Adding a form -->
+                <form action="thanks.html" method="get">
+
+                    <div>
+
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="John doe">
+                    </div>
+                        
+                    <div>
+                        
+                        <label for="youremail">Email</label>
+                        <input type="email" id="youremail" name="youremail" placeholder="algonquin Email" value="@algonquinlive.com" required>
+                    </div>
+
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="tickets">How many tickets? (Sold in pairs)</label>
+                        <input type="number" name="tickets" id="tickets" min="2" max="10" step="2" value="2">
+                    </div>
+
+                    <div>
+                        <label for="row">ROW</label>
+                        <select>
+                            <option value="Front" selected>Front</option>
+                            <option value="Center">Center Row</option>
+                            <option value="Back">Baxk Row</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h3>Have you been here before?</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="past">
+
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="past">
+                    </div>
+
+                    <div>
+                        <h3>Policies</h3>
+                        <input type="checkbox" name="policies" id="policies" required >
+                        <label for="policies">I agree to the terms and conditions.</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Site Footer -->
+        <footer>
+            Copyright &copy; Reggie's coffee shop, 2023
+        </footer>
+
+    </body>
+</html>
