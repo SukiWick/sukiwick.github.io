@@ -1,0 +1,59 @@
+/* font family and increase the font size */
+body
+{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header and footer background colour */
+header, footer
+{
+    background-color: rgb(122, 212, 247);
+}
+/* class site-title of the main heading */
+h1.site-title
+{
+    color: darkolivegreen;
+}
+/* image box-shadow */
+img#my-image
+{
+    box-shadow: 0 0 2px 1px #000;
+}
+/* Replaces the bullets from the list */
+ul#my-hobbies-list
+{
+    list-style: square;
+}
+/* nth-child selector - adds a background */
+ul#my-hobbies-list li:nth-child(2n+1)
+{
+    background-color: rgb(232, 232, 232);
+}
+/* Navigation effects */
+nav ul
+{
+ list-style: none;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited
+{
+    background-color: antiquewhite;
+    text-decoration: none;
+    border: 1px solid #000;
+    /* horizontal vertical blur spread color */
+    /* box-shadow: -2px 2px 4px 2px black; */
+}
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus
+{
+    text-decoration: none;
+    background-color: rgb(212, 252, 144);
+}
+
+nav ul a:active
+{
+    background-color: rgb(240, 124, 147);
+    box-shadow: 0 0 4px 2px black;
+}
