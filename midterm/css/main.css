@@ -1,0 +1,43 @@
+body
+{
+ background-color: #aad4cf;
+ margin: 0;
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #D4E9E7;
+}
+
+#starFishWideHolder
+{
+    background: cadetblue url(../images/lone-starfish-wide.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: 341px;
+}
+#starFishWideHolder h1
+{
+    position: absolute;
+    width: 100%;
+    bottom: 55px;
+    text-align: center;
+    color: #fff;
+}
+header nav ul
+{
+
+}
+header nav ul li
+{
+    
+}
+header nav ul
+{
+
+}
+header nav ul li a
+{
+    
+}
