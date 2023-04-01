@@ -1,0 +1,19 @@
+/* font-family: 'Playfair Display', serif; */
+
+h1
+{
+    font-family: 'Playfair Display', serif;
+    font-weight:700;
+}
+
+h2
+{
+
+}
+.map iframe
+{
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
