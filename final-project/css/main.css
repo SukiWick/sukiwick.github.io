@@ -36,7 +36,7 @@ nav
     width: 100%;
     margin: 0 0px 10px 0px;
 }
-#logoHolder
+#logo_holder
 {
     width: 100%;
     background-color: #C78B07;
@@ -54,18 +54,18 @@ nav ul
     display: grid;
     justify-items: center;
 }
-#searchForm
+#search_form
 {
     display: grid;
     grid-template-columns: auto 40px;
     height: 50px;
 }
-#searchForm input[type=text]
+#search_form input[type=text]
 {
     color: #222222;
     font-size: 20px;
 }
-#searchForm button
+#search_form button
 {
     color: #222222;
     font-size: 20px;
@@ -80,11 +80,11 @@ nav ul
     width: 100%;
   }
   
-  .mainBanner, .ourVision
+  .main_banner, .our_vision
   {
     position: relative;
   }
-  .mainBannerOverlay
+  .main_banner_overlay
   {
     position: absolute;
     top: 0;
@@ -94,73 +94,73 @@ nav ul
     padding: 15px;
 
   }
-  .mainBannerOverlay button
+  .main_banner_overlay button
   {
     background-color: #C78B07;
     border: none;
     padding: 15px;
     cursor: pointer;
   }
-  .mainBannerOverlay h1
+  .main_banner_overlay h1
   {
     font-size: 56px;
     margin: 0px 0px 15px 0;
   }
-  .mainBannerOverlay p
+  .main_banner_overlay p
   {
     margin: 0px 0px 15px 0;
   }
-  .main-grid-container 
+  .main_grid_container 
   {
     display: grid;
     /* grid-template-columns: auto auto auto; */
   }
-  .aboutUs
+  .about_us
   {
     background-color: #FFE6AC;
     padding: 15px;
   }
-  .aboutUs_Col2 h1, 
-  .ourServices_row1 h1, 
-  .ourTeam_row1 h1,
-  .ourVision_Container h1,
-  .contactUs_row1 h1
+  .about_us_Col2 h1, 
+  .our_services_row1 h1, 
+  .our_team_row1 h1,
+  .our_vision_container h1,
+  .contact_us_row1 h1
   {
     font-weight: bold;
     font-size: 45px;
     margin: 15px 0 15px 0;
   }
-  .aboutUs_Col2 p
+  .about_us_Col2 p
   {
     margin: 10px 0 10px 0;
   }
-  .ourServices_Container, ourTeam_Container
+  .our_services_container, .our_team_container
   {
     display: grid;
  
   }
-  .ourServices_row1, .ourTeam_row1
+  .our_services_row1, .our_team_row1
 {
   background-color: #fff;
 }
-  .ourServices_row1, 
-  .ourServices_row2, 
-  .ourServices_row3,
-  .ourServices_row4,
-  .ourServices_row5,
-  .ourServices_row6,
-  .ourTeam_row1,
-  .ourTeam_row2,
-  .ourTeam_row3,
-  .contactUs_row1,
-  .contactUs_row2,
-  .contactUs_row3,
-  .contactUs_row4
+  .our_services_row1, 
+  .our_services_row2, 
+  .our_services_row3,
+  .our_services_row4,
+  .our_services_row5,
+  .our_services_row6,
+  .our_team_row1,
+  .our_team_row2,
+  .our_team_row3,
+  .contact_us_row1,
+  .contact_us_row2,
+  .contact_us_row3,
+  .contact_us_row4
   {
     grid-column-start: 1;
     grid-column-end: 7;
   }
-  .grayButton
+  .gray_button
   {
     background-color: #222222;
     border: none;
@@ -170,7 +170,7 @@ nav ul
     border: 1px solid #222;
     font-weight: bold;
   }
-  .site-footer
+  .site_footer
   {
     color:  #C78B07;
     background-color: #222222;
@@ -181,48 +181,48 @@ nav ul
     padding: 20px 15px 15px 15px;
     margin: 0 auto;
   }
-  .site-footer p
+  .site_footer p
 {
 }
-.subHeadings
+.sub_headings
 {
   font-weight: bold;
   font-size: 40px;
   margin: 0 0 20px 0;
 }
-.row_Content_Container
+.row_content_container
 {
   padding: 30px 15px 15px 15px;
   background-color: #FFE6AC;
   margin: 0 0 10px 0;
 }
-.row_Content_Container p, .ourVision_Container p
+.row_content_container p, .our_vision_container p
 {
   margin: 0 0 15px 0;
 }
-.ourServices, .ourTeam, .contactUs
+.our_services, .our_team, .contact_us
 {
   background-color: #fff;
   padding: 10px 10px 0 10px;
 }
-.ourTeam h1
+.our_team h1
 {
   margin: 0 0 5px 0;
 }
-.ourTeam h3
+.our_team h3
 {
   font-weight: bold;
   margin: 0 0 5px 0;
 }
-.ourTeam hr
+.our_team hr
 {
   color: #C78B07;
 }
-.ourVision
+.our_vision
 {
   
 }
-.ourVision_Container
+.our_vision_container
   {
     position: absolute;
     top: 0;
@@ -248,48 +248,52 @@ nav ul
     border: 1px solid #000;
     padding: 20px;
   }
-  .contactUs_Container form label
+  .contact_us_container form label
   {
     width: 100%;
     display: block;
     margin: 0 0 10px 0;
   }
-  .contactUs_Container form input[type="text"],
-  .contactUs_Container form input[type="email"]
+  .contact_us_container form input[type="text"],
+  .contact_us_container form input[type="email"]
   {
     width: 100%;
     height: 35px;
     border: 1px solid #222;
     border-radius: 6px;
   }
-  .contactUs_Container form div
+  .contact_us_container form div
   {
     margin: 0 0 10px 0;
   }
-  .contactUs_Container form textarea
+  .contact_us_container form textarea
   {
     width: 100%;
     height: 115px;
     border: 1px solid #222;
     border-radius: 6px;
   }
-  .contactUs_Container form button
+  .contact_us_container form button
   {
     border: 1px solid #222;
     color: #C78B07;
     background-color: #222;
     padding: 10px;
   }
-  .contactUs_Container
+  .contact_us_container
   {
     padding: 30px 15px 15px 15px;
     margin: 0 0 10px 0;
   }
-  .contactUs_Map_Container, .hrs_Of_operation
+  .contact_us_map_container, .hrs_Of_operation
   {
     margin: 0 0 10px 0;
   }
-  .contactUs_Map_Container iframe
+  .contact_us_map_container iframe
 {
   width: 100%;
+}
+.contact_us_container h3
+{
+  font-size: 31px;
 }
