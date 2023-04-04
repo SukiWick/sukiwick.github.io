@@ -7,7 +7,7 @@ body
 header
 {
   background-color: #222222;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 nav ul li a,
