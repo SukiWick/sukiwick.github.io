@@ -1,19 +1,291 @@
-/* font-family: 'Playfair Display', serif; */
-
-h1
+body
 {
-    font-family: 'Playfair Display', serif;
-    font-weight:700;
+    /* background-color: #222222; */
+    /* padding: 10px; */
+    background-color: #fff;
+}
+header
+{
+  background-color: #222222;
+  padding: 10px;
 }
 
-h2
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited
 {
-
+    background-color: #222222;
+    color: #C78B07;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
 }
-.map iframe
+
+nav ul li a:hover
+{
+    background-color: #C78B07;
+    color:  #222222;
+}
+
+nav
 {
     width: 100%;
-    max-width: 800px;
-    display: block;
-    margin: 0 auto;
+    margin: 0 0px 10px 0px;
 }
+#logoHolder
+{
+    width: 100%;
+    background-color: #C78B07;
+}
+nav ul li
+{
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+nav ul
+{
+    display: grid;
+    justify-items: center;
+}
+#searchForm
+{
+    display: grid;
+    grid-template-columns: auto 40px;
+    height: 50px;
+}
+#searchForm input[type=text]
+{
+    color: #222222;
+    font-size: 20px;
+}
+#searchForm button
+{
+    color: #222222;
+    font-size: 20px;
+    border: 1px solid #C78B07;
+    background-color: #222222;
+    cursor: pointer;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  
+  .mainBanner, .ourVision
+  {
+    position: relative;
+  }
+  .mainBannerOverlay
+  {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: 20px 0 0px 0px;
+    padding: 15px;
+
+  }
+  .mainBannerOverlay button
+  {
+    background-color: #C78B07;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .mainBannerOverlay h1
+  {
+    font-size: 56px;
+    margin: 0px 0px 15px 0;
+  }
+  .mainBannerOverlay p
+  {
+    margin: 0px 0px 15px 0;
+  }
+  .main-grid-container 
+  {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+  }
+  .aboutUs
+  {
+    background-color: #FFE6AC;
+    padding: 15px;
+  }
+  .aboutUs_Col2 h1, 
+  .ourServices_row1 h1, 
+  .ourTeam_row1 h1,
+  .ourVision_Container h1,
+  .contactUs_row1 h1
+  {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 15px 0 15px 0;
+  }
+  .aboutUs_Col2 p
+  {
+    margin: 10px 0 10px 0;
+  }
+  .ourServices_Container, ourTeam_Container
+  {
+    display: grid;
+ 
+  }
+  .ourServices_row1, .ourTeam_row1
+{
+  background-color: #fff;
+}
+  .ourServices_row1, 
+  .ourServices_row2, 
+  .ourServices_row3,
+  .ourServices_row4,
+  .ourServices_row5,
+  .ourServices_row6,
+  .ourTeam_row1,
+  .ourTeam_row2,
+  .ourTeam_row3,
+  .contactUs_row1,
+  .contactUs_row2,
+  .contactUs_row3,
+  .contactUs_row4
+  {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  .grayButton
+  {
+    background-color: #222222;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #222;
+    font-weight: bold;
+  }
+  .site-footer
+  {
+    color:  #C78B07;
+    background-color: #222222;
+    height: 60px;
+    display: grid;
+    align-items: center;
+    max-width: 1024px;
+    padding: 20px 15px 15px 15px;
+    margin: 0 auto;
+  }
+  .site-footer p
+{
+}
+.subHeadings
+{
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+.row_Content_Container
+{
+  padding: 30px 15px 15px 15px;
+  background-color: #FFE6AC;
+  margin: 0 0 10px 0;
+}
+.row_Content_Container p, .ourVision_Container p
+{
+  margin: 0 0 15px 0;
+}
+.ourServices, .ourTeam, .contactUs
+{
+  background-color: #fff;
+  padding: 10px 10px 0 10px;
+}
+.ourTeam h1
+{
+  margin: 0 0 5px 0;
+}
+.ourTeam h3
+{
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+.ourTeam hr
+{
+  color: #C78B07;
+}
+.ourVision
+{
+  
+}
+.ourVision_Container
+  {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    margin: 20px 0 0px 0px;
+    padding: 15px;
+  }
+  table
+  {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+  }
+  table tr th
+  {
+    border: 1px solid #000;
+    background-color: #FFE6AC;
+    padding: 20px;
+  }
+  table tr td
+  {
+    text-align: left;
+    border: 1px solid #000;
+    padding: 20px;
+  }
+  .contactUs_Container form label
+  {
+    width: 100%;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+  .contactUs_Container form input[type="text"],
+  .contactUs_Container form input[type="email"]
+  {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 6px;
+  }
+  .contactUs_Container form div
+  {
+    margin: 0 0 10px 0;
+  }
+  .contactUs_Container form textarea
+  {
+    width: 100%;
+    height: 115px;
+    border: 1px solid #222;
+    border-radius: 6px;
+  }
+  .contactUs_Container form button
+  {
+    border: 1px solid #222;
+    color: #C78B07;
+    background-color: #222;
+    padding: 10px;
+  }
+  .contactUs_Container
+  {
+    padding: 30px 15px 15px 15px;
+    margin: 0 0 10px 0;
+  }
+  .contactUs_Map_Container, .hrs_Of_operation
+  {
+    margin: 0 0 10px 0;
+  }
