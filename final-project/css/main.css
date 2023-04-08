@@ -112,8 +112,10 @@ nav ul
   }
   .main_grid_container 
   {
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: auto auto auto; */
+    display: flex;
+    flex-wrap: wrap;
   }
   .about_us
   {
@@ -297,7 +299,7 @@ nav ul
 {
   font-size: 31px;
 }
-.search_form button
+.fa-solid
 {
   color: #c78b07;
 }
