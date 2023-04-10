@@ -3,19 +3,23 @@ body
     /* background-color: #222222; */
     /* padding: 10px; */
     background-color: #fff;
+    font-family: 'Playfair Display', serif;
 }
 header
 {
   background-color: #222222;
   /* padding: 10px; */
 }
-
+.fa-solid
+{
+  color: #c78c06;
+}
 nav ul li a,
 nav ul li a:link,
 nav ul li a:visited
 {
     background-color: #222222;
-    color: #C78B07;
+    color: #c78c06;
     text-decoration: none;
     width: 100%;
     height: 50px;
@@ -27,7 +31,7 @@ nav ul li a:visited
 
 nav ul li a:hover
 {
-    background-color: #C78B07;
+    background-color: #c78c06;
     color:  #222222;
 }
 
@@ -39,7 +43,7 @@ nav
 #logo_holder
 {
     width: 100%;
-    background-color: #C78B07;
+    background-color: #c78c06;
 }
 nav ul li
 {
@@ -69,7 +73,7 @@ nav ul
 {
     color: #222222;
     font-size: 20px;
-    border: 1px solid #C78B07;
+    border: 1px solid #c78c06;
     background-color: #222222;
     cursor: pointer;
 }
@@ -96,7 +100,7 @@ nav ul
   }
   .main_banner_overlay button
   {
-    background-color: #C78B07;
+    background-color: #c78c06;
     border: none;
     padding: 15px;
     cursor: pointer;
@@ -112,10 +116,21 @@ nav ul
   }
   .main_grid_container 
   {
-    /* display: grid; */
+    display: grid; 
     /* grid-template-columns: auto auto auto; */
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .our_vision button
+  {
+    border: 1px solid #c78c06;
+  }
+  .our_vision button i
+  {
+    color: #fff;
   }
   .about_us
   {
@@ -154,10 +169,8 @@ nav ul
   .our_team_row1,
   .our_team_row2,
   .our_team_row3,
-  .contact_us_row1,
-  .contact_us_row2,
-  .contact_us_row3,
-  .contact_us_row4
+  .our_team_row4,
+  .our_team_row5
   {
     grid-column-start: 1;
     grid-column-end: 7;
@@ -174,12 +187,12 @@ nav ul
   }
   .site_footer
   {
-    color:  #C78B07;
+    color:  #c78c06;
     background-color: #222222;
     height: 60px;
     display: grid;
     align-items: center;
-    max-width: 1024px;
+    /* max-width: 1024px; */
     padding: 20px 15px 15px 15px;
     margin: 0 auto;
   }
@@ -205,7 +218,8 @@ nav ul
 .our_services, .our_team, .contact_us
 {
   background-color: #fff;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 10px 10px;
+  /* width: 100%; */
 }
 .our_team h1
 {
@@ -218,11 +232,13 @@ nav ul
 }
 .our_team hr
 {
-  color: #C78B07;
+  color: #c78c06;
 }
 .our_vision
 {
-  
+max-height: 300px;
+display: block;
+overflow: hidden;
 }
 .our_vision_container
   {
@@ -278,13 +294,13 @@ nav ul
   .contact_us_container form button
   {
     border: 1px solid #222;
-    color: #C78B07;
+    color: #c78c06;
     background-color: #222;
     padding: 10px;
   }
-  .contact_us_container
+  .contact_us_inner_container
   {
-    padding: 30px 15px 15px 15px;
+    padding: 0px 15px 15px 0px;
     margin: 0 0 10px 0;
   }
   .contact_us_map_container, .hrs_Of_operation
@@ -295,11 +311,206 @@ nav ul
 {
   width: 100%;
 }
-.contact_us_container h3
+.main_grid_container .fa-solid
 {
-  font-size: 31px;
+  color: #fff;
+font-size: 19px;
 }
-.fa-solid
+.main_banner img
 {
-  color: #c78b07;
+  min-height: 400px;
+}
+/* ================================================== */
+@media screen and (min-width:760px) 
+{
+  #logo_holder
+  {
+    background-color: #222;
+    float: left;
+    width: auto;
+  }
+  nav ul
+  {
+    display: block;
+    float: left;
+    margin: 40px 0px 0 0;
+  }
+  nav ul li
+  {
+    display: inline;
+    padding: 10px;
+  }
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited
+  {
+    /* float: left; */
+    display: inline;
+    width: auto;
+    padding: 10px;
+  }
+  .nav_container
+  {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+    padding: 30px 0 0 0;
+  }
+  .main_banner_overlay
+  {
+    max-width: 1200px;
+   }
+  #search_form
+  {
+    float: right;
+    display: block;
+    height: auto;
+  }
+  .main_banner
+  {
+    justify-content: center;
+    display: flex;  
+  }
+  .about_us_container
+  {
+    background-color: #FFE6AC;
+    padding: 15px;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .our_service_level1_img
+  {
+    height: 390px;
+  }
+  .our_service_level2_img
+  {
+    height: 253px;
+  }
+  .about_us_col2
+  {
+    padding: 15px;
+  }
+  .main_grid_container 
+  {
+    /* display: grid;
+    gap: 10px; */
+  }
+  .our_vision
+  {
+    margin: 10px 0 0 0;
+  }
+  .our_services
+  {
+    padding: 0;
+    margin: 0 0px 0px 10px;
+  }
+  .our_services_container
+  {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 10px;
+  }
+  .our_services_container .row_content_container
+  {
+    margin: 0;
+  }
+  .our_services_row2
+  {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+  .our_services_row3
+  {
+    grid-area: 2 / 4 / 3 / 7;
+  }
+  .our_services_row4
+  {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .our_services_row5
+  {
+    grid-area: 3 / 3 / 4 / 5;
+  }
+  .our_services_row6
+  {
+    grid-area: 3 / 5 / 4 / 7;
+  }
+  .our_services_container button
+  {
+    width: 100%;
+  }
+/* ================================================================== */
+  .our_team .row_content_container
+  {
+    height: 100%;
+    /* padding: 0%; */
+  }
+  .our_team
+  {
+    padding: 0;
+    margin: 0 10px 0px 10px;
+  }
+  .our_team_container
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .our_team_row1
+  {
+    order: 1;
+  }
+  .our_team_row2
+  {
+    grid-area: 2 / 1 / 3 / 2;
+    order: 2;
+  
+  }
+  .our_team_row3
+  {
+    grid-area: 2 / 2 / 3 / 3;   
+    order: 3;
+  }
+  .our_team_row4
+  {
+    grid-area: 3 / 2 / 4 / 2;
+    order: 5;
+  }
+  .our_team_row5
+  {
+    grid-area: 3 / 1 / 4 / 2;
+    order: 4;
+  }
+/* ================================================================== */
+/* ================================================================== */
+  .contact_us_container
+  {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  .contact_us_row1
+  {
+    order: 1;
+  }
+  .contact_us_row2
+  {
+    order: 2;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .contact_us_row3
+  {
+    order: 4;
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  .contact_us_row4
+  {
+    order: 3;
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .main_banner_overlay
+  {
+    margin: 20px 10px 0px 10px;
+  }
 }
