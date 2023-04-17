@@ -37,18 +37,15 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <form id="search_form">
-                            <input type="text" name="serch" placeholder="Search">
-        
-                            <button type="submit">
-                                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </form>
-
-                    </li>
                 </ul>
 
+                <form id="search_form">
+                    <input type="text" name="serch" placeholder="Search">
+
+                    <button type="submit">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
                 
             </nav>
         </div>
@@ -56,10 +53,13 @@
         <!-- Main Banner==================================================================== -->
 
         <div class="main_banner" id="home">
-            <img src="images/main-banner.jpg" class="center" alt="This is the main Banner">
+
+            <div class="main_banner_container">
+
+            </div>
 
             <div class="main_banner_overlay">
-                <h1>Wecome to Three Star Media</h1>
+                <h1>Welcome to Three Star Media</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti commodi asperiores
                     architecto doloribus ea expedita, obcaecati recusandae aperiam distinctio suscipit provident illo
@@ -222,7 +222,7 @@
             <!-- Our Vision section -->
             <section class="our_vision">
                 <div class="image_container">
-                    <img src="images/vision.jpg" class="center" alt="This ia vision image">
+ 
                 </div>
                 <div class="our_vision_container">
                     <h2>Our Vision</h2>
@@ -315,7 +315,9 @@
                                 <!-- message of the person goes here -->
                                 <div>
                                     <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="5" required></textarea>
+                                    <textarea name="message" id="message" rows="5" required>
+                                        
+                                    </textarea>
                                 </div>
                                 <!-- This will submit the cantact form -->
                                 <button type="submit">SEND</button>
