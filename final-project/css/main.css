@@ -374,9 +374,18 @@ font-size: 19px;
     height: 120px;
     padding: 30px 0 0 0;
   }
+  .max_Width
+  {
+    max-width: 1200px;
+  }
   .main_banner_overlay
   {
     max-width: 1200px;
+    min-height: 330px;
+   }
+   footer
+   {
+    background-color: #222;
    }
   #search_form
   {
