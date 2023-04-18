@@ -1,15 +1,15 @@
+/* this effects the body tag */
 body
 {
-    /* background-color: #222222; */
-    /* padding: 10px; */
     background-color: #fff;
     font-family: 'Playfair Display', serif;
 }
+/* This is the header tag styling */
 header
 {
   background-color: #222222;
-  /* padding: 10px; */
 }
+/* this affects the main banner contaner that contains the image */
 .main_banner_container
 {
   background-image: url("../images/main-banner.jpg");
@@ -19,11 +19,13 @@ header
   min-height: 400px;
   width: 100%;
 }
-
+/* this comes from font awesome */
 .fa-solid
 {
   color: #c78c06;
 }
+
+/* navigation bar stles */
 nav ul li a,
 nav ul li a:link,
 nav ul li a:visited
@@ -38,23 +40,26 @@ nav ul li a:visited
     align-items: center;
     
 }
-
+/* navigation item hover */
 nav ul li a:hover
 {
     background-color: #c78c06;
     color:  #222222;
 }
-
+/* affects the nav tag */
 nav
 {
     width: 100%;
     margin: 0 0px 10px 0px;
 }
+
+/* this affects the container of the logo */
 #logo_holder
 {
     width: 100%;
     background-color: #c78c06;
 }
+/* this affects list items in the navigation */
 nav ul li
 {
     height: 50px;
@@ -68,12 +73,15 @@ nav ul
     display: grid;
     justify-items: center;
 }
+/* this styles the search box form */
 #search_form
 {
     display: grid;
     grid-template-columns: auto 40px;
     height: 50px;
 }
+
+/* our vission image container styles */
 .image_container
 {
   background-image: url("../images/vision.jpg");
@@ -83,11 +91,13 @@ nav ul
   min-height: 400px;
   width: 100%;
 }
+/* this styles the search box*/
 #search_form input[type=text]
 {
     color: #222222;
     font-size: 20px;
 }
+/* this styles the search button */
 #search_form button
 {
     font-size: 20px;
@@ -95,17 +105,21 @@ nav ul
     background-color: #222222;
     cursor: pointer;
 }
+/* this centers the images*/
 .center {
     display: block;
-    margin-left: auto;
+    
     margin-right: auto;
     width: 100%;
+    margin-left: auto;
   }
-  
+/* this affects main banner and our vision sections */
   .main_banner, .our_vision
   {
     position: relative;
   }
+
+  /* this styles the overlay of the main banner */
   .main_banner_overlay
   {
     position: absolute;
@@ -116,6 +130,7 @@ nav ul
     padding: 15px;
 
   }
+  /* this styles button of the overlay of the main banner */
   .main_banner_overlay button
   {
     background-color: #c78c06;
@@ -132,16 +147,16 @@ nav ul
   {
     margin: 0px 0px 15px 0;
   }
+  /* this styles the main container */
   .main_grid_container 
   {
     display: grid; 
-    /* grid-template-columns: auto auto auto; */
-    /* display: flex; */
     flex-wrap: wrap;
     flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
   }
+    /* this styles the our vision button */
   .our_vision button
   {
     border: 1px solid #c78c06;
@@ -150,11 +165,16 @@ nav ul
   {
     color: #fff;
   }
+  .main_banner_overlay button i
+  {
+    color: #000;
+  }
   .about_us
   {
     background-color: #FFE6AC;
     padding: 15px;
   }
+    /* this styles the bubheadings */
   .about_us_Col2 h1, 
   .our_services_row1 h1, 
   .our_team_row1 h1,
@@ -165,10 +185,12 @@ nav ul
     font-size: 45px;
     margin: 15px 0 15px 0;
   }
+    /* this styles the prargraphs of obout us column 2 */
   .about_us_Col2 p
   {
     margin: 10px 0 10px 0;
   }
+    /* this styles the containers*/
   .our_services_container, .our_team_container
   {
     display: grid;
@@ -178,6 +200,7 @@ nav ul
 {
   background-color: #fff;
 }
+  /* this styles the grid*/
   .our_services_row1, 
   .our_services_row2, 
   .our_services_row3,
@@ -193,6 +216,7 @@ nav ul
     grid-column-start: 1;
     grid-column-end: 7;
   }
+    /* this styles the gray color button */
   .gray_button
   {
     background-color: #222222;
@@ -203,6 +227,7 @@ nav ul
     border: 1px solid #222;
     font-weight: bold;
   }
+    /* this styles the site footer*/
   .site_footer
   {
     color:  #c78c06;
@@ -237,7 +262,6 @@ nav ul
 {
   background-color: #fff;
   padding: 10px 10px 10px 10px;
-  /* width: 100%; */
 }
 .our_team h1
 {
@@ -338,7 +362,8 @@ font-size: 19px;
 {
   min-height: 400px;
 }
-/* ================================================== */
+/* =======================================================================================================================*/
+  /* below are the media query and its styles in side */
 @media screen and (min-width:760px) 
 {
   #logo_holder
@@ -358,11 +383,11 @@ font-size: 19px;
     display: inline;
     padding: 10px;
   }
+     /* this styles the navigation section changes after 760px */
   nav ul li a,
   nav ul li a:link,
   nav ul li a:visited
   {
-    /* float: left; */
     display: inline;
     width: auto;
     padding: 10px;
@@ -398,6 +423,7 @@ font-size: 19px;
     justify-content: center;
     display: flex;  
   }
+     /* this styles the obout us section changes after 760px */
   .about_us_container
   {
     background-color: #FFE6AC;
@@ -420,11 +446,6 @@ font-size: 19px;
   {
     padding: 15px;
   }
-  .main_grid_container 
-  {
-    /* display: grid;
-    gap: 10px; */
-  }
   .our_vision
   {
     margin: 10px 0 0 0;
@@ -434,6 +455,7 @@ font-size: 19px;
     padding: 0;
     margin: 0 0px 0px 10px;
   }
+    /* this styles the our services section changes after 760px */
   .our_services_container
   {
     display: grid;
@@ -469,6 +491,7 @@ font-size: 19px;
     width: 100%;
   }
 /* ================================================================== */
+   /* this styles the our team section changes after 760px */
   .our_team .row_content_container
   {
     height: 100%;
@@ -510,7 +533,7 @@ font-size: 19px;
     order: 4;
   }
 /* ================================================================== */
-/* ================================================================== */
+   /* this styles the contact us section changes after 760px */
   .contact_us_container
   {
     display: grid;
